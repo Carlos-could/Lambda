@@ -9,22 +9,12 @@ public class LambdaAufgabe2 {
         vornamen.add("Tim");
         vornamen.add("Kim");
         vornamen.add("Harry");
-
-        vornamen.removeIf (    (String b) -> {return b.contains("**m"); }    );
+        //vornamen.removeIf (    (String b) -> { return b.contains("T"); }    );
+        //vornamen.removeIf(  (String c) -> { return c.charAt(2)!='m'; }  );
+        vornamen.removeIf( c -> c.charAt(2)!='m'  );
 
         System.out.println(vornamen);
 
 
-
-
-
-//        System.out.println(vornamen);
-//
-//        String x = vornamen.get(1);
-//        System.out.println(x);
-//
-//        char m = x.charAt(2) ;
-//        System.out.println(m);
-//
     }
 }
